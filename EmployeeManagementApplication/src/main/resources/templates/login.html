@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+            max-width: 960px;
+            margin: 16px auto;
+            padding: 16px;
+            border: 2px solid #ccc; /* Add border to the entire page */
+            border-radius: 8px;
+     }
+
+        #login {
+            display: inline-block;
+            text-align: left;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div align="center">
+    <img src="https://lh3.googleusercontent.com/proxy/GtRdWXCkKpLjcDJXwBvnKWqx7b0CzeEj4Q14R5TGigstIX_37hXUH1qsM-ShO-4LiDfj1gsfRUMAgPCpsLdYbLqPxd8wFjYI4K38of5dagJcjQhP"
+         alt="GFG image" />
+    <br>
+    <h4>Login</h4>
+</div>
+
+<form th:action="@{/login}" method="post">
+    <div id="login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autofocus />
+
+        <br/><br/><br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+    </div >
+
+
+    <br/><br/><br/>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+</form>
+</body>
+</html>
